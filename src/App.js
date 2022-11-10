@@ -47,7 +47,6 @@ function App() {
   }
 
   useEffect(() => {
-    //rerender pokemons when they one is deleted
   }, [pokemons])
   return (
     <div className="App">
