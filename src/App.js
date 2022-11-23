@@ -40,14 +40,13 @@ function App() {
     }
   }, [data])
 
-  function onDelete (index){
-    const newPokemons = [...pokemons];
-    newPokemons.splice(index, 1);
-    setPokemons(newPokemons);
+  function onDelete (name){
+    setPokemons(pokemons.filter(pokemon => pokemon.name !== name));
   }
 
   useEffect(() => {
   }, [pokemons])
+
   return (
     <div className="App">
       <div>

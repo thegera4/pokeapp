@@ -6,7 +6,7 @@ function PkmnCard({pokemons, onDelete}) {
       <div className='container'>
         {pokemons.map((pokemon, index) => (
           <div key={index} className='card'>
-            <button className='delete' onClick={()=>onDelete(index)}>
+            <button className='delete' onClick={()=>onDelete(pokemon.name)}>
               X
             </button>
             <img src={pokemon.sprite} alt={pokemon.name} />
